@@ -9,7 +9,7 @@
     <?php include 'css/style.css' ?>
 </head>
 <body>
-       <div class="container">
+        <div class="container">
         <form method="POST">
             <h1 style="height: 50px;">Any Query?</h1>
             <p>Please fill in this form, we'll reach you soon.</p>
@@ -33,24 +33,34 @@
       
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write your message..." style="height:200px"></textarea>
-      
           <input type="submit" value="Submit" name="submit>
       
         </form>
       </div>
+
+       <footer>
+          <p>Copyright © 2022 All Rights Reserved<br> </p>
+            <a href="#" class="fa fa-facebook"></a>  
+            <a href="#" class="fa fa-twitter"></a>  
+            <a href="#" class="fa fa-linkedin"></a>  
+            <a href="#" class="fa fa-instagram"></a>  
+            <a href="#" class="fa fa-youtube"></a>  
+            <a href="#" class="fa fa-pinterest"></a>  
+            <a href="#" class="fa fa-google"></a>  
+      </footer>
 </body>
 </html>
 
 <?php
-include 'connection.php';
+include ("connection.php");
 
 if(isset($_POST['Submit'])){
-    $fname = $_POSt['fname'];
-    $lname = $_POSt['lname'];
-    $country = $_POSt['country'];
-    $subject = $_POSt['subject'];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $country = $_POST['country'];
+    $subject = $_POST['subject'];
 
-    $insertquery ="insert into contactus(First Name, Last Name, Country, Subject) values('$fname','$lname', '$country', '$subject' )";
+    $insertquery ="INSERT INTO contactus(firstname, lastname, country, subject) values('$fname','$lname', '$country', '$subject')";
 
     $result= mysqli_query($conn, $insertquery);
  
@@ -58,17 +68,15 @@ if(isset($_POST['Submit'])){
 
         ?>
         <script>
-            alert('Data Saved')
+            alert('Data Saved');
         </script>
         <?php 
     } else{
         ?>
         <script>
-            alert('Oops, Something went wrong!')
+            alert('Oops, Something went wrong!');
         </script>
         <?php
     }
-
 }
-
 ?>
