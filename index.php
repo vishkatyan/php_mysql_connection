@@ -9,29 +9,7 @@
     <?php include 'css/style.css' ?>
 </head>
 <body>
-     <!-- Navbar Start Here -->
-     <div class="nav">
-        <div class="nav-warper">
-            <div>
-                <img src="images/icoder_logo.png" class="logo">
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="#about"> About </a></li>
-                    <li> <a href="contactus.html"> Contact Us </a> </li>
-                    <li> <a href="roadmaps.html"> Roadmaps </a> </li>
-                    <li> <a href="signup.html"> SignUp </a> </li>
-                    <li> <a href="login.html"> Login </a> </li>
-                    <li><i class="fa fa-fw fa-search"></i> </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navbar End Here  -->
-
-    <div class="container">
+       <div class="container">
         <form method="POST">
             <h1 style="height: 50px;">Any Query?</h1>
             <p>Please fill in this form, we'll reach you soon.</p>
@@ -60,17 +38,6 @@
       
         </form>
       </div>
-
-       <footer>
-          <p>Copyright © 2022 All Rights Reserved<br> </p>
-            <a href="#" class="fa fa-facebook"></a>  
-            <a href="#" class="fa fa-twitter"></a>  
-            <a href="#" class="fa fa-linkedin"></a>  
-            <a href="#" class="fa fa-instagram"></a>  
-            <a href="#" class="fa fa-youtube"></a>  
-            <a href="#" class="fa fa-pinterest"></a>  
-            <a href="#" class="fa fa-google"></a>  
-      </footer>
 </body>
 </html>
 
